@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Presale</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Token Presale</h2>
+        <button onclick="connectWallet()">Connect Wallet</button>
+        <div>
+            <h3>Buy Tokens</h3>
+            <input type="number" id="ethAmount" placeholder="Enter ETH Amount">
+            <button onclick="buyTokens('ETH')">Buy with ETH</button>
+            <input type="number" id="usdtAmount" placeholder="Enter USDT Amount">
+            <button onclick="buyTokens('USDT')">Buy with USDT</button>
+        </div>
+        <div class="presale-details">
+            <h3>Presale Details</h3>
+            <p>Soft Cap: <span id="softCap"></span></p>
+            <p>Hard Cap: <span id="hardCap"></span></p>
+            <p id="timeRemaining"></p>
+        </div>
+        <p id="errorMessage"></p>
+    </div>
+    <!-- Link to your JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
